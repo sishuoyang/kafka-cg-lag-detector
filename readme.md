@@ -2,6 +2,9 @@
 
 This Python script analyzes the lag between consumer groups across two Kafka clusters. It compares offsets for each topic and partition and provides detailed or summary reports on lag differences. A typical use case is clusters with [Confluent Cluster Linking](https://docs.confluent.io/platform/current/multi-dc-deployments/cluster-linking/index.html) and the consumer group offset synchronization is enabled. 
 
+## Note
+The script was tested with Confluent Platform 7.1.7 only.
+
 ## Features
 
 - **Concurrent Execution**: Fetches consumer group information from both Kafka clusters concurrently for improved performance.
